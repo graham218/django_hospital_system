@@ -40,6 +40,9 @@ urlpatterns = [
 
     path('afterlogin', views.afterlogin_view,name='afterlogin'),
     path('logout', LogoutView.as_view(template_name='hospital/index.html'),name='logout'),
-    
+
     path('admin-dashboard', views.admin_dashboard_view,name='admin-dashboard'),
+
+    path('admin-doctor', views.admin_doctor_view,name='admin-doctor'),
+    path('admin-view-doctor', views.admin_view_doctor_view,name='admin-view-doctor'),
 ]

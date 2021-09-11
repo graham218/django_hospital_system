@@ -50,4 +50,6 @@ urlpatterns = [
     path('admin-add-doctor', views.admin_add_doctor_view,name='admin-add-doctor'),
     path('admin-approve-doctor', views.admin_approve_doctor_view,name='admin-approve-doctor'),
     path('approve-doctor/<int:pk>', views.approve_doctor_view,name='approve-doctor'),
+    path('reject-doctor/<int:pk>', views.reject_doctor_view,name='reject-doctor'),
+    path('admin-view-doctor-specialisation',views.admin_view_doctor_specialisation_view,name='admin-view-doctor-specialisation'),
 ]

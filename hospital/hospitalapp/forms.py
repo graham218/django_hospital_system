@@ -11,7 +11,7 @@ class AdminSigupForm(forms.ModelForm):
         fields=['first_name','last_name','username','password']
         widgets = {
         'password': forms.PasswordInput()
-        }on_delete
+        }
 
 
 #for doctor related form

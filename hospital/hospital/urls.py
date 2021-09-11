@@ -71,3 +71,13 @@ urlpatterns = [
     path('approve-appointment/<int:pk>', views.approve_appointment_view,name='approve-appointment'),
     path('reject-appointment/<int:pk>', views.reject_appointment_view,name='reject-appointment'),
 ]
+
+#---------FOR DOCTOR RELATED URLS-------------------------------------
+urlpatterns +=[
+    path('doctor-dashboard', views.doctor_dashboard_view,name='doctor-dashboard'),
+
+    path('doctor-patient', views.doctor_patient_view,name='doctor-patient'),
+    path('doctor-view-patient', views.doctor_view_patient_view,name='doctor-view-patient'),
+    path('doctor-view-discharge-patient',views.doctor_view_discharge_patient_view,name='doctor-view-discharge-patient'),
+    
+]

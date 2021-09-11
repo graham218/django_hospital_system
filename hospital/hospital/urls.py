@@ -61,4 +61,7 @@ urlpatterns = [
     path('admin-approve-patient', views.admin_approve_patient_view,name='admin-approve-patient'),
     path('approve-patient/<int:pk>', views.approve_patient_view,name='approve-patient'),
     path('reject-patient/<int:pk>', views.reject_patient_view,name='reject-patient'),
+    path('admin-discharge-patient', views.admin_discharge_patient_view,name='admin-discharge-patient'),
+    path('discharge-patient/<int:pk>', views.discharge_patient_view,name='discharge-patient'),
+    path('download-pdf/<int:pk>', views.download_pdf_view,name='download-pdf'),
 ]
